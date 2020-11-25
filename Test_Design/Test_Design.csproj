@@ -52,8 +52,29 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form_Edit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Edit.Designer.cs">
+      <DependentUpon>Form_Edit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_NewTest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_NewTest.Designer.cs">
+      <DependentUpon>Form_NewTest.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Edit.resx">
+      <DependentUpon>Form_Edit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_NewTest.resx">
+      <DependentUpon>Form_NewTest.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -75,6 +96,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TestLib\TestLib.csproj">
+      <Project>{DC49C827-3B20-4DC1-A7A2-799CC820B8B4}</Project>
+      <Name>TestLib</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

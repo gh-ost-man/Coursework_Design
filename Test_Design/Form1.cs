@@ -16,5 +16,24 @@ namespace Test_Design
         {
             InitializeComponent();
         }
+
+        private void Form1_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void btn_NewTest_Click(object sender, EventArgs e)
+        {
+            Form_NewTest newTest = new Form_NewTest();
+            this.Hide();
+            newTest.ShowDialog();
+        }
+
+        private void btn_Edit_Click(object sender, EventArgs e)
+        {
+            Form_Edit edit = new Form_Edit();
+            this.Hide();
+            edit.ShowDialog();
+        }
     }
 }
