@@ -320,6 +320,7 @@
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btn_File);
             this.Name = "Form_Edit";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form_Edit";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form_Edit_FormClosing);
             this.groupBox2.ResumeLayout(false);

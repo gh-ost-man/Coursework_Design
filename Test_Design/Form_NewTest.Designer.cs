@@ -350,6 +350,7 @@
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.btn_Back);
             this.Name = "Form_NewTest";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form_NewTest";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form_NewTest_FormClosing);
             this.groupBox_Answer.ResumeLayout(false);
